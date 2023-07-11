@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>diabetesTester</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-3" href="/">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+
+    <h1 class=" my-3 mx-3">Diabetes Prediction System</h1>
+  <p class="mx-3">Enter the following information to predict if a person is diabetic or not.</p>
+  <form class="mx-3" action="{{ url_for('predict')}}" method="post">
+    <label>Fasting glucose level: </label><br>
+    <input class="my-3" type="text" name="fasting_glc"><br>
+
+    <label>After glucose level: </label><br>
+    <input class="my-3" type="text" name="after_glc"><br>
+
+    <label>Blood pressure: </label><br>
+    <input class="my-3" type="text" name="blood_pressure"><br>
+
+    <label>Skin thickness: </label><br>
+    <input class="my-3" type="text" name="skin_thickness"><br>
+    
+    <label>Insulin: </label><br>
+    <input class="my-3" type="text" name="insulin"><br>
+
+    <label>BMI: </label><br>
+    <input class="my-3" type="text" name="bmi"><br>
+
+    <label>Diabetes Pedigree Function: </label><br>
+    <input class="my-3" type="text" name="Diabetes_pedigree_function"><br>
+    
+    <label>Age: </label><br>
+    <input class="my-3" type="text" name="age"><br>
+    
+    <button type="submit" class="btn btn-outline-success my-3">Submit</button>
+  </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
+

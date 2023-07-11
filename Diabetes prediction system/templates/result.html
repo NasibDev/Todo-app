@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>diabetesTester</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-3" href="/">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+    <h1 class="my-3 mx-3">Diabetes Prediction Result</h1>
+    <h4 class="mx-3">Result: {{ prediction_text }}</h4>
+
+    <div class="container text-center p-4">
+        <div class="row align-items-start">
+        <div class="col">
+            <p class="text-decoration-underline">Parameters</p>
+        </div>  
+          <div class="col">
+            <p class="text-decoration-underline">Result</p>
+          </div>
+          <div class="col">
+            <p class="text-decoration-underline">Normal average level</p>
+          </div>
+        </div>
+
+        <div class="row align-items-start my-3">
+            <div class="col">
+            Fasting glucose level
+            </div>
+            <div class="col">
+              {{value1}}
+            </div>
+            <div class="col">
+              109-110
+            </div>
+          </div>
+
+        <div class="row align-items-start my-3">
+            <div class="col">
+            After glucose level
+            </div>
+            <div class="col">
+              {{value2}}
+            </div>
+            <div class="col">
+              164-165
+            </div>
+        </div>
+
+        <div class="row align-items-start my-3">
+            <div class="col">
+                Blood pressure
+            </div>
+            <div class="col">
+              {{value3}}
+            </div>
+            <div class="col">
+              68-69
+            </div>
+        </div>
+
+        <div class="row align-items-start my-3">
+            <div class="col">
+                Skin thickness
+            </div>
+            <div class="col">
+              {{value4}}
+            </div>
+            <div class="col">
+              19-20
+            </div>
+          </div>
+
+        
+          <div class="row align-items-start my-3">
+            <div class="col">
+                Insulin
+            </div>
+            <div class="col">
+              {{value5}}
+            </div>
+            <div class="col">
+              68-69
+            </div>
+          </div>
+
+        <div class="row align-items-start my-3">
+            <div class="col">
+                BMI
+            </div>
+            <div class="col">
+              {{value6}}
+            </div>
+            <div class="col">
+              30-31
+            </div>
+        </div>
+
+        <div class="row align-items-start my-3">
+            <div class="col">
+                Diabetes Pedigree Function
+            </div>
+            <div class="col">
+              {{value7}}
+            </div>
+            <div class="col">
+              0.4-0.5
+            </div>
+          </div>
+
+          <div class="row align-items-start my-3">
+            <div class="col">
+                Age
+            </div>
+            <div class="col">
+              {{value8}}
+            </div>
+            <div class="col">
+              --
+            </div>
+          </div>
+
+      </div>
+
+      <form action="/" method="GET">
+        <button type="submit" class="btn btn-outline-success mx-3">Go back</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
